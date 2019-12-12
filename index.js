@@ -2,7 +2,7 @@
 
 var mongoose = require("mongoose");
 var app = require("./app");
-var port = 5000;
+var port = process.env.PORT || 5000;
 
 mongoose.set("useFindAndModify", false);
 mongoose.Promise = global.Promise;
